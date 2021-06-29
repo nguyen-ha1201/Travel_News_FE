@@ -1,3 +1,8 @@
+
+.box, .form {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 13px;
+}
 .contact {
     margin-top: 30px;
     display: flex;
@@ -9,7 +14,7 @@
     background-color: #503434;
     border-radius: 5%;
     padding-top: 10px;
-    padding-left: 65px;
+    padding-left: 40px;
 }
 .box h3 {
     color: rgb(206, 206, 43);
@@ -28,11 +33,11 @@
     color: white;
 }
 .form {
-    margin-top: 80px;
+    margin-top: 50px;
     height: 200px;
 }
 .input {
-    margin-top: 10px;
+    margin-top: 25px;
     padding-left: 40px;
 }
 .input_left {
@@ -45,11 +50,22 @@
     width: 300px;
     height: 20px;
     margin-bottom: 10px;
-    padding-left: 10px;
 }
 .input_right {
     width: 400px;
     float: right;
+}
+.input_left input, .input_right textarea{
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057; 
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out; 
 }
 .input_right textarea {
     width: 250px;
@@ -57,14 +73,29 @@
     padding-left: 10px;
 }
 .submit {
-    width: 100px;
-    height: 40px;
-    padding-top: 120px;
+    padding-top: 80px;
     padding-left: 560px;
+}
+.submit input{
+    width: 100px;
+    height: 30px;
+    background-color:#503434;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 15px;
+    margin-bottom: 20px;
 }
 .form p {
     font-style: italic;
     font-weight: bold;
+    font-size: 14px;
+
 }
 input [type="submit"] {
     width: 80px;
