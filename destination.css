@@ -255,26 +255,25 @@ body {
 	display: flex;
 	justify-content: space-evenly;
 	color: #503434;
+	position: relative;
+	top: 5px;
 	
   }
   .btn1 {
 	display: inline-block;
     background-color: #503434;
-    border: 4px double #cccccc;
 	color: #ffffff;
 	font-size: large;
   }
   .btn2 {
 	display: inline-block;
     background-color: #503434;
-    border: 4px double #cccccc;
 	color: #ffffff;
 	font-size: large;
   }
   .btn3 {
 	display: inline-block;
     background-color: #503434;
-    border: 4px double #cccccc;
 	color: #ffffff;
 	font-size: large;
   }
@@ -310,7 +309,7 @@ body {
   #templatemo_content {
 	clear: both;
 	width: 790px;
-	height: 750px;
+	height: 600px;
 	padding: 20px 30px;
 	margin: 0 15px;
 	background: #afc7b9 url(images/templatemo_top_content.jpg) top no-repeat;
@@ -329,13 +328,12 @@ body {
   
   /* footer */
   #templatemo_footer {
-	clear: both;
-	position: absolute;
+	position: relative;
 	bottom: 0px; 
-	left: 527px;
 	text-align: center;
-	width: 810px;
+	width: 790px;
 	padding: 30px 20px 30px 20px;
+    margin: 0 15px;
 	background-color: rgb(252,251,203);;
   }
   
