@@ -1,8 +1,18 @@
+/*
+CSS Credit: http://www.templatemo.com
+*/
+
+
+/* 
+Travel Template 
+http://www.templatemo.com/preview/templatemo_138_travel 
+*/
+
 body {
     margin: 0;
     padding: 0;
     line-height: 1.5em;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: Arial, Helvetica, sans-serif;
     font-size: 11px;
     color: #333;
     background: #ffffff;
@@ -127,11 +137,8 @@ img {
 .header_01 {
     padding: 0 0 10px 0;
     margin: 0 0 10px 0;
-    font-size: 25px;
-    color: #503434;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
+    font-size: 18px;
+    color: #a13232;
 }
 
 .header_02 {
@@ -259,6 +266,7 @@ img {
 #templatemo_menu li .current {
     background: #b78d4b;
     color: #ffffff;
+    transition: 2s;
 }
 
 
@@ -267,69 +275,38 @@ img {
 
 /* content */
 
-#btn {
-    display: flex;
-    justify-content: space-evenly;
-    color: #503434;
-    position: relative;
-    top: 5px;
-}
-
-.btn1 {
+.member1,
+.member2,
+.member3,
+.member4,
+.member5 {
     display: inline-block;
-    background-color: #503434;
-    color: #ffffff;
-    font-size: large;
+    margin-left: 15px;
+    width: 17%;
 }
 
-.btn2 {
-    display: inline-block;
-    background-color: #503434;
-    color: #ffffff;
-    font-size: large;
+.title {
+    text-align: center;
 }
 
-.btn3 {
-    display: inline-block;
-    background-color: #503434;
-    color: #ffffff;
-    font-size: large;
+.avatar {
+    max-width: 130px;
+    max-height: 130px;
+    margin: auto;
 }
 
-.address {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
-
-.box {
-    width: 200px;
-    height: 200px;
-    background-color: white;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    top: 10px;
-    margin: 25px;
-}
-
-.img1 {
-    display: flex;
-    justify-content: center;
-    position: relative;
-    top: 20px;
-}
-
-.adcontent {
-    margin: 30px 15px;
-    font-size: small;
+#avatar {
+    max-width: 100%;
+    max-height: 100%;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 #templatemo_content {
     clear: both;
     width: 790px;
-    height: 600px;
     padding: 20px 30px;
     margin: 0 15px;
     background: #afc7b9 url(images/templatemo_top_content.jpg) top no-repeat;
@@ -344,6 +321,96 @@ img {
     background: linear-gradient(180deg, rgba(252, 251, 203, 1) 0%, rgba(175, 199, 185, 1) 18%, rgba(252, 251, 203, 1) 100%);
 }
 
+.aboutus_content p {
+    font-size: 13px;
+}
+
+.aboutus_image {
+    max-width: 500px;
+    max-height: 300px;
+    margin: auto;
+}
+
+.aboutus_content {
+    min-height: 200px;
+}
+
+#aboutus_image {
+    max-width: 100%;
+    max-height: 100%;
+    border: 10px solid white;
+}
+
+.section_w430 {
+    width: 430px;
+}
+
+.section_w430 p {
+    margin-bottom: 10px;
+}
+
+.section_w430 img {
+    float: left;
+    margin: 3px 10px 0 0;
+}
+
+.section_w320 {
+    width: 320px;
+}
+
+.section_w320_with_bg {
+    position: relative;
+    width: 320px;
+    color: #ffffff;
+    padding: 0px;
+    background: #503434;
+}
+
+.section_w320_with_bg_top {
+    width: 320px;
+    height: 30px;
+    margin: 0px;
+    background: url(images/templatemo_left_column_top.jpg) no-repeat;
+}
+
+.section_w320_with_bg_bottom {
+    clear: both;
+    width: 320px;
+    height: 20px;
+    background: url(images/templatemo_left_column_bottom.jpg) no-repeat;
+}
+
+.new_destination {
+    clear: both;
+    padding: 0px 20px;
+}
+
+.new_destination p {
+    text-align: left;
+}
+
+.new_destination a {
+    color: #ffff00;
+}
+
+.new_destination .img_wrapper {
+    float: left;
+    background: #ffffff;
+    padding: 4px;
+    margin: 3px 15px 0 0;
+}
+
+.img_wrapper img {
+    width: 80px;
+    height: 68px;
+    border: 1px solid #666;
+}
+
+.new_destination .nd_text {
+    float: right;
+    width: 175px;
+}
+
 
 /* end of content */
 
@@ -351,14 +418,21 @@ img {
 /* footer */
 
 #templatemo_footer {
+    clear: both;
     position: relative;
-    bottom: 0px;
+    width: 880px;
     text-align: center;
-    width: 790px;
-    padding: 30px 20px 30px 20px;
-    margin: 0 15px;
-    background-color: rgb(252, 251, 203);
-    ;
+    padding: 20px 0;
+}
+
+#templatemo_footer_bottom {
+    display: block;
+    position: absolute;
+    width: 880px;
+    height: 10px;
+    bottom: 0px;
+    left: 0px;
+    background: url(images/templatemo_footer.jpg) no-repeat;
 }
 
 .footer_list {
@@ -380,3 +454,6 @@ img {
 .footer_list .last {
     border-right: none;
 }
+
+
+/* footer */
