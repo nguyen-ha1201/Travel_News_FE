@@ -2,15 +2,11 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Travel and Living</title>
-    <meta name="keywords" content="" />
-    <meta name="description" content="" />
-    <link href="../css/style.css" rel="stylesheet" type="text/css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel News</title>
     <link rel="stylesheet" href="../css/destination.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <script language="javascript" type="text/javascript">
         function clearText(field) {
             if (field.defaultValue == field.value) field.value = '';
@@ -20,27 +16,83 @@
 </head>
 
 <body>
-    <div id="templatemo_container">
-        <div id="templatemo_banner">
-            <div id="search_section">
-                <form action="#" method="get">
-                    <input type="text" value="Enter keyword here..." name="q" size="10" id="searchfield" title="searchfield" onfocus="clearText(this)" onblur="clearText(this)" />
-                    <input type="submit" name="Search" value="" alt="Search" id="searchbutton" title="Search" />
-                </form>
+    <div class="header">
+        <div class="header__produce" id="produce">
+            <div class="header__produce-logo">
+                <a href="./homepage.html">
+                    <div class="header__produce-logo__detail">
+                        <h4 style="color: #999;margin-bottom: 0;">Travel</h4>
+                        <h4 style="color: var(--primary_color);margin-left: 5px;margin-bottom: 0;">News</h4>
+                    </div>
+                </a>
+            </div>
+
+            <div class="header__produce-right">
+                <div class="header__product-time">
+                    <p>08:00 AM - 05:00 PM</p>
+                </div>
+                <div class="header__product-call">
+                    <p>+84 123456789</p>
             </div>
         </div>
-        <div id="templatemo_menu">
-            <ul>
-                <li><a href="../homepage/index.html">Home</a></li>
-                <li><a href="destination.html" class="current">Destinations</a></li>
-                <li><a href="../about us/aboutus.html">About Us</a></li>
-                <li><a href="../contact/contact.html">Contact</a></li>
+
+    </div>
+
+    <div>
+        <div class="header__navbar sticky">
+            <ul class="header__navbar-list">
+                <li class="header__navbar-list-item">
+                    <a href="../homepage/homepage.html">Home</a>
+                </li>
+                <li class="header__navbar-list-item">
+                    <a href="../destination/destination.html">Destination</a>
+                </li>
+                <li class="header__navbar-list-item">
+                    <a href="../about us/aboutus.html">About us</a>
+                </li>
+                <li class="header__navbar-list-item">
+                    <a href="../contact/contact.html">Contact</a>
+                </li>
             </ul>
         </div>
+    </div>
+
+    <div class="container__background-slide">
+
+        <!-- indicator -->
+        <div class="container__background-indicator">
+            <div class="container__bd-indicator-inner">
+
+                <div class="container__bd-indicator-item">
+                    <img src="../Image/images1/Máy ảnh.jpg" alt="first slider">
+                    <div class="container__bd-indicator-caption">
+                        <h6 class="container__bd-indicator-img-infor-h6">Choose a destination that appeals to you</h6>
+                        <h1 class="container__bd-indicator-img-infor-h1">Top Destination</h1>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Control Previous -->
+
+            <a class="contaner__background-control-prev" href="#" role="button" data-slide="prev">
+                <span class="contaner__background-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+
+            <!-- Control Next -->
+
+            <a class="contaner__background-control-next" href="#" role="button" data-slide="next">
+                <span class="contaner__background-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </div>
+
+    
         <!-- end of menu -->
 
         <div id="templatemo_content">
-            <div class="header_01">Top Destinations</div>
             <div id="btn">
                 <button class="btn1" id="btnNorthern">Northern</button>
                 <button class=" btn2 " id="btnCentral">Central</button>
@@ -48,30 +100,37 @@
             </div>
             <div class="address" id="places">
             </div>
-
-
-
         </div>
         <!-- end of content -->
     </div>
-    <div id="templatemo_footer ">
 
-        <ul class="footer_list ">
-            <li><a href="# ">Home</a></li>
-            <li><a href="# ">Services</a></li>
-            <li><a href="# ">Destinations</a></li>
-            <li><a href="# ">About Us</a></li>
-            <li class="last "><a href="# ">Contact Us</a></li>
-        </ul>
+    <div class="footer">
+        
+        <div class="footer__contactus">
+            <h3>Contact Us</h3>
+            <ul  class="footer__contactus-list">
+                <li class="footer__contactus-list-item">
+                    <a href="">+84 123456789</a>
+                </li>
+                <li class="footer__contactus-list-item">
+                    <a href="">abcdefgh@gmail.com</a>
+                </li>
+                <li class="footer__contactus-list-item">
+                    <a href="">km9 Nguyen Trai, Nam Tu Liem</a>
+                </li>
+            </ul>
 
-        <div class="margin_bottom_10 "></div>
-        Copyright © 2024 <a href="subpage.html ">Your Company Name</a> |
-        <!-- Credit: www.templatemo.com -->
-        <div class="margin_bottom_10 "></div>
+            <ul class="footer__list">
+                <li><a href="">Home</a></li>
+                <li><a href="">Destination</a></li>
+                <li><a href="">About us</a></li>
+                <li class="last"><a href="#">Contact Us</a></li>
+            </ul>
 
-        <a href="http://validator.w3.org/check?uri=referer "><img style="border:0;width:88px;height:31px " src="http://www.w3.org/Icons/valid-xhtml10 " alt="Valid XHTML 1.0 Transitional " width="88 " height="31 " vspace="8 " border="0 " /></a>
-        <a href="http://jigsaw.w3.org/css-validator/check/referer "><img style="border:0;width:88px;height:31px " src="http://jigsaw.w3.org/css-validator/images/vcss-blue " alt="Valid CSS! " vspace="8 " border="0 " /></a>
-    </div>
+            <div id="footer__bottom"></div>
+
+            </div>
+        </div> 
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>

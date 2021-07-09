@@ -13,7 +13,7 @@ btn1.onclick = function() {
                 return `
                     <div class="box">
                     <div class="img1">
-                        <a href="#"><img src="${list.img}" style=width:170px;height:120px;></a>
+                        <a href="#"><img src="${list.img}" style=width:290px;height:230px;></a>
                     </div>
                     <div class="adcontent">
                         <a href="#">${list.name} <br>
@@ -35,12 +35,12 @@ btn2.onclick = function() {
             const lists = filterData.map((list, index) => {
                 return `
                     <div class="box">
-                    <div class="img1">
-                        <a href="#"><img src="${list.img}" style=width:170px;height:120px;></a>
-                    </div>
-                    <div class="adcontent">
-                        <a href="#">${list.name} <br>
-                    </a>
+                        <div class="img1">
+                            <a href="#"><img src="${list.img}" style=width:290px;height:230px;></a>
+                        </div>
+                        <div class="adcontent">
+                            <a href="#">${list.name} <br>
+                        </a>
                     </div>
                 </div>
                     `
@@ -58,14 +58,13 @@ btn3.onclick = function() {
             const lists = filterData.map((list, index) => {
                 return `
                     <div class="box">
-                    <div class="img1">
-                        <a href="#"><img src="${list.img}" style=width:170px;height:120px;></a>
+                        <div class="img1">
+                            <a href="#"><img src="${list.img}" style=width:290px;height:230px;></a>
+                        </div>
+                        <div class="adcontent">
+                            <a href="#">${list.name} <br></a>
+                        </div>
                     </div>
-                    <div class="adcontent">
-                        <a href="#">${list.name} <br>
-                    </a>
-                    </div>
-                </div>
                     `
             })
             places.innerHTML = lists;

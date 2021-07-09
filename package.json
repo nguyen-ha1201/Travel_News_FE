@@ -1,0 +1,20 @@
+{
+  "name": "travel_news_fe",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start":"json-server --watch db.json",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nguyen-ha1201/Travel_News_FE.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nguyen-ha1201/Travel_News_FE/issues"
+  },
+  "homepage": "https://github.com/nguyen-ha1201/Travel_News_FE#readme"
+}

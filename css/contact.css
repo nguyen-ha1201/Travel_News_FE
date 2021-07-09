@@ -1,5 +1,201 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lora', serif;
+    font-size: 1rem;
+	font-weight: 400;
+	line-height: 1.5em;
+    color: #212529;
+	text-align: left;
+    background: #ffffff;
+}
 
-.box, .form {
+form {
+    display: block;
+    margin-top: 0em;
+}
+
+button {
+	display: inline-block;
+    font-weight: 400;
+    color: #212529;
+    text-align: center;
+    vertical-align: middle;
+    user-select: none;
+    background-color: transparent;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem
+}
+
+img {
+    vertical-align: middle;
+    border-style: none;
+}
+
+h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+}
+
+.header__produce {
+	min-height: 70px;
+	background-color: #ffffff;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 10%;
+	margin-bottom: 3px;
+}
+
+.header__produce-logo {
+	display: block;
+}
+
+.header__produce-logo a {
+	text-decoration: none;
+}
+
+.header__produce-logo__detail {
+	display: flex;
+	flex-wrap: wrap;
+	margin-right: -15px;
+    margin-left: -15px;
+	font-weight: 500;
+	line-height: 1.2;
+	margin-top: -18px;
+	margin-bottom: 18px;
+}
+
+.header__produce-logo__detail h4 {
+	margin-top: 32px;
+	margin-left: 8px;
+	font-size: 2.5rem;
+	align-items: center;
+}
+
+.header__produce-right {
+	display: flex;
+	align-items: center;
+	float: right;
+}
+
+.header__produce-right div {
+	margin: 0 1rem;
+}
+
+.header__product-time p {
+    display: block;
+	margin-top: 10rem;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+/* navbar */
+
+.header__navbar {
+	width: 100%;
+	justify-content: space-between;
+	background-color: #162e44;
+}
+
+
+
+.header__navbar-list {
+	display: flex;
+    padding-left: 0;
+    list-style: none;
+    margin: 0;
+	display: flex;
+	justify-content: space-evenly;
+}
+
+.header__navbar-list-item a {
+	font-size: 1.25rem;
+	margin: 0 1rem;
+    position: relative;
+    padding: 1rem 1rem;
+    text-decoration: none;
+    color: #fff;
+    display: inline-block;
+}
+
+.header__navbar-list-item a:hover {
+    background: #304559;
+    color: #ffffff;
+}
+/* 
+.sticky {
+    position: fixed;
+    top: 0;
+    background-color: rgba(255, 255, 255, 255);
+    box-shadow: 1px 1px 5px #999;
+    color: #666 !important;
+    z-index: 99; 
+} */
+/* end navbar */
+
+
+/* content */
+
+.header {
+    background-color: #ffffff;
+}
+
+#templatemo_content {
+    /* width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto; */
+}
+
+.container__contact__help-questions {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+.container__contact__help-questions h2 {
+    margin-bottom: 3rem;
+    color: #666;
+    font-size: 2rem;
+}
+
+.form-group {
+    margin-bottom: 1rem;
+} 
+
+.container__contact__help-questions label {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+.container__contact__help-questions input {
+    margin-bottom: 10px;
+}
+
+.control-form {
+    display: block;
+    width: 80%;
+    height: calc(2.25rem + 2px);
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: .25rem;
+}
+
+/* .box, .form {
     font-family: 'Times New Roman', Times, serif;
     font-size: 13px;
 }
@@ -100,5 +296,58 @@
 input [type="submit"] {
     width: 80px;
     height: 30px;
+} */
+
+
+/* footer */
+.footer {
+    text-align: center;
+    background-color: #162e44;
+	color: #ffffff;
+    width: 100%;
+    padding: 3rem 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
 
+.footer__contactus h3{
+	font-size: 1.75rem;
+	margin: 0 auto;
+}
+
+.footer__contactus-list-item{
+	list-style-type: none;
+	margin: 5px 0;
+}
+
+.footer__contactus-list li a{
+	color: #ffffff;
+	text-decoration: none;
+	margin: 0 auto;
+}
+
+.footer__bottom {
+    display : block;	
+	position: absolute;
+	width: 880px;
+	height: 10px;
+	bottom: 0px;
+	left: 0px;	
+	background: url(./img/templatemo_footer.jpg) no-repeat;
+}
+
+.footer__list li {
+    padding: 0 10px;
+	display: inline;
+	border-right: 1px solid #ffffff;
+}
+
+.footer__list li a {
+	color: #ffffff;
+	font-size: 14px;
+}
+
+.footer__list .last {
+	border-right: none;
+}  

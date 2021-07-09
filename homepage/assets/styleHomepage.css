@@ -1,4 +1,3 @@
-
 body {
     margin: 0;
     padding: 0;
@@ -9,20 +8,6 @@ body {
     color: #212529;
 	text-align: left;
     background: #ffffff;
-}
-button {
-	display: inline-block;
-    font-weight: 400;
-    color: #212529;
-    text-align: center;
-    vertical-align: middle;
-    user-select: none;
-    background-color: transparent;
-    border: 1px solid transparent;
-    padding: .375rem .75rem;
-    font-size: 1rem;
-    line-height: 1.5;
-    border-radius: .25rem
 }
 
 img {
@@ -166,13 +151,13 @@ h1 {
     z-index: 10;
     padding-top: 20px;
     padding-bottom: 20px;
-    color: rgb(12, 11, 11);
+    color: #fff;
     text-align: center;
 }
 
 .container__bd-indicator-caption h6 {
 	font-size: 1.3rem;
-    text-shadow: 2px 2px 4px rgb(245, 240, 240);
+    text-shadow: 2px 2px 4px #999;
     animation: moveLiner__right 1s ease-in;
 }
 
@@ -232,143 +217,201 @@ h1 {
 }
 
 /* end background slider */
-/* menu */
-
-#templatemo_menu {
-    clear: both;
-    width: 880px;
-    height: 70px;
-    background: url(images/templatemo_menu_bg.jpg) no-repeat;
-}
-
-#templatemo_menu ul {
-    padding: 5px 15px 0 15px;
-    margin: 0px;
-    list-style: none;
-}
-
-#templatemo_menu ul li {
-    display: inline;
-}
-
-#templatemo_menu ul li a {
-    float: left;
-    display: block;
-    padding: 0 30px;
-    height: 35px;
-    padding-top: 17px;
-    text-align: center;
-    font-size: 14px;
-    text-align: center;
-    text-decoration: none;
-    color: #6b0211;
-    font-weight: bold;
-    outline: none;
-}
-
-#templatemo_menu li a:hover,
-#templatemo_menu li .current {
-    background: #b78d4b;
-    color: #ffffff;
-    transition: 2s;
-}
-
-
-/* end of menu*/
 
 
 /* content */
+    /* destinaiton */
 
-.templatemo__content1-1 {
+ .des {
+    height: 540px;
+    position: relative;
+    width: 100%;
     display: flex;
+    justify-content: center;
+}
+
+.des__top {
+	width: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 11%;
     flex-wrap: wrap;
-    margin-bottom: 1.5rem!important;
-    margin-right: -15px;
-    margin-left: -15px;
+}
+
+.des__detail {
+	margin: 0 1rem;
+    box-shadow: 1px 3px 7px #999;
+    border-radius: 4px;	
     position: relative;
 }
 
-.aboutus_image {
-    position: relative;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
-    flex: 0 0 40%;
-    max-width: 50%;
-    margin: 10rem 0 8rem 9rem;
+.des__detail-img {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    overflow: hidden;
 }
 
-.aboutus_image img {
-    height: 280px;
-    width: 420px;
+.des__detail-img img {
+	width: 370px;
+    height: 420px;
+    transition: 0.5s;
+    border-radius: 4px;
+    opacity: 0.9;
 }
 
-.aboutus_content {
-    position: relative;
-    width: 35%;
-    min-height: 1px;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin: 9rem  0 0 0;
-    text-align:justify;
-}
-
-
-.member1,
-.member2,
-.member3 {
-    display: inline-block;
-    margin: 0 5rem 2rem 5rem;
-    width: 20%;
-}
-
-.member4,
-.member5 {
-    display: inline-block;
-    margin: 0 10rem 2rem 10rem;
-    width: 20%;
-}
-
-
-.about_ourteam h1 {
+.des__detail-name {
+    font-weight: 600;
+    position: absolute;
+    color: rgba(255, 255, 255, 0.9);
+    text-shadow: black 0.1em 0.1em 0.2em;
+    font-size: 1.5rem;
+    text-shadow: 2px 2px 4px #000000;
+    width: 100%;
     text-align: center;
-    margin: 8rem 0 6rem 0;
-    text-shadow: 2px 2px 4px rgb(65, 63, 63);
+    bottom: 5%
 }
 
-.about_ourtem1 {
-    margin: 0 4rem 4rem 4rem;
+.des__top-newdes {
+	margin: 0;
+    position: absolute;
+    bottom: 1%;
+    font-size: 1.4rem;
+    font-weight: 400;
+    transition: 0.3s;
+    color: var(--text-color);
+}
+    /* end destinaiton */
+
+    /* discover */
+
+.contain__discover {
+    display: flex;
+    justify-content: center;
+    margin: 5rem 4rem;
+    align-items: center;
 }
 
-.about_ourteam2 {
-    margin: 0 8rem 4rem 8rem;
+.contain__discover-img {
+    box-shadow: 1px 3px 7px #999;
+    margin-right: 6rem;
+    border-radius: 4px;
 }
 
-.title {
+.contain__discover-img img {
+    width: 500px;
+    height: 340px;
+    border-radius: 4px;
+}
+
+.contain__discover-infor {
+    max-width: 40rem;
+}
+
+.contain__discover-infor h1 {
+    margin: 0 0 1.2rem 0;
+}
+
+    /* end discover */
+
+    /* impress */    
+
+.contain__impress {
+    background-image: url("./img/Cầu\ vàng\ Đà\ Nẵng.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:100%;
+    border-top-right-radius: 2px;
+    border-top-left-radius: 2px;
+    padding-top: 450px;
+    width: 100%;
+    position: relative;
+    background-attachment: fixed;
+    opacity: 0.8;
+}
+
+.contain__impress-include {
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    color: #fff;
+    text-shadow: black 0.2em 0.2em 0.3em;
+    position: absolute;
     text-align: center;
-
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
 
-.avatar {
-    max-width: 130px;
-    max-height: 130px;
-    margin: auto;
+.contain__impress-include h1 {
+    margin-bottom: .5rem;
+    font-weight: 500;
+    line-height: 1.2;
 }
 
-#avatar {
-    max-width: 100%;
-    max-height: 100%;
-    width: 130px;
-    height: 130px;
-    border-radius: 50%;
-    object-fit: cover;
+.ontain__impress-include-p {
+    margin-bottom: 2rem;
 }
 
-/* end of content */
+    /* end impress */
+
+    /* introduction */
+.container__intro {
+    background-color: #f1f1f1;
+}
+
+.container__intro-title {
+    text-align: center;
+    padding-top: 4rem;
+    padding-bottom: 5rem;
+    margin: 0;
+    font-weight: 410;
+    font-size: 2.5rem;
+    color: rgba(0, 0, 0, 0.8);
+}
+
+.container__intro-include {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.container__intro-include-content {
+    background-color: #fff;
+    position: relative;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 380px;
+    max-width: 381px;
+    margin: 1rem;
+    margin-bottom: 8rem;
+    padding: 1rem;
+    border-radius: 4px;
+}
+
+.container__intro-include-content h2 {
+    color:#0fc7ce
+}
+
+.container__intro-include-content p {
+    margin-top: 1rem;
+    max-width: 23rem;
+    text-align: justify;
+}
+    /* end introduction */
+
+/* end content */
 
 
-/* footer */
 
+
+/*footer*/
  
 .footer {
     text-align: center;
@@ -420,7 +463,4 @@ h1 {
 
 .footer__list .last {
 	border-right: none;
-} 
-
-
-/* footer */
+}  
