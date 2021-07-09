@@ -266,7 +266,10 @@ h1 {
     flex-wrap: wrap;
     justify-content: space-evenly;
 }
-
+.address button {
+    border: none;
+    /* height: 250px; */
+}
 .box {
     width: 325px;
     height: 310px;
